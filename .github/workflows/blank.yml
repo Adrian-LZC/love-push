@@ -28,4 +28,4 @@ jobs:
           pip3 install zhdate==0.1
       - name: love-push
         run: |
-          python3 ./main.py
+          python3 main.py
