@@ -196,8 +196,8 @@ def tip():
             res = conn.getresponse()
             data = res.read()
             data = json.loads(data)
-            pop = data["newslist"][0]["pop"]
-            tips = data["newslist"][0]["tips"]
+            pop = ""
+            tips = data["result"]["tips"]
             return pop,tips
         except:
             return ("天气预报API调取错误，请检查API是否正确申请或是否填写正确"),""
