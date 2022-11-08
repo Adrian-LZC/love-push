@@ -195,6 +195,7 @@ def tip():
             conn.request('POST','/tianqi/index',params,headers)
             res = conn.getresponse()
             data = res.read()
+            data = result.decode('utf-8')
             data = json.loads(data)
             pop = ""
             tips = data["result"]["tips"]
